@@ -8,7 +8,7 @@ from .models import *
 class Product(forms.ModelForm):
     class Meta:
         model = Product
-        fields = ["img", "name", "price", "url"]
+        fields = ["img", "name", "price", "desc", "url"]
 
 
 #
