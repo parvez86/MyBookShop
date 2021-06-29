@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+{% static 'media' as BaseImgUrl%}
+{% block link %}
+    <style>
+        img {
+             max-width: 40%;
+             height: auto;
+            object-fit: scale-down;
+        }
+    </style>
+{% endblock %}
+{% block body %}
+    <!-- Page Content -->
+    <div class="page-heading products-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-content">
+              <h4>new arrivals</h4>
+              <h2>Emazon Products</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="products">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="filters">
+              <ul>
+                  <li class="active" data-filter="*">All Products</li>
+                  <li data-filter=".des">Featured</li>
+                  <li data-filter=".dev">Flash Deals</li>
+                  <li data-filter=".gra">Last Minute</li>
+              </ul>
+            </div>
+          </div>
+            {% for item in products %}
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href={{ item.url }} target="_blank"><img src={% static ''%}{{ item.img }} alt=""></a>
+              <div class="down-content">
+                <a href={{ item.url }}><h4></h4></a>
+                <h6>Tk. {{ item.price }}</h6>
+                <p>{{ item.name }}</p>
+                <ul class="stars">
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                </ul>
+                <span>Reviews (24)</span>
+              </div>
+            </div>
+          </div>
+            {% endfor %}
+        </div>
+      </div>
+    </div>
+{% endblock %}
