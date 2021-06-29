@@ -16,5 +16,14 @@ it will navigate him to the Amazon website. Then the customer can buy products f
 4. Database (MySQL)
 5. Object Relation Mapping
 6. A suitable look for the use case
+## Products Page
+![Product Page](screenshots/products_page.PNG)
 
+## Contacts Page
+![Contact Page](screenshots/contact_page.PNG)
 
+## Login Page
+![Login Page](screenshots/login_page.PNG)
+
+## Signup Page
+![Signup Page](screenshots/register_page.PNG)
