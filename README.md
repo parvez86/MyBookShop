@@ -1,4 +1,4 @@
-# DSI Assignment Task2 
+# My BookShop
 A simple Django-based website where customers can get a different type of amazon product with a name, product image, and price in BDT. If any user clicks on the product's image to see product details or buy a product, 
 it will navigate him to the Amazon website. Then the customer can buy products from amazon's website.
 
